@@ -54,5 +54,12 @@ Age: Filled with the Mean (since age typically has low variation among students)
 Marks: Filled with the Median (to reduce the influence of outliers).
 
 Categorical Normalization: Converting "Department" strings to uppercase (e.g., 'cse' to 'CSE') to ensure consistency.
+## Summary of Methods Used
+Method	            purpose
+np.nan	            Standard representation for "Not a Number".
+df.replace()   	    Swaps placeholders with manageable NaN values.
+df.to_numeric()	    Forces data into float/int types.
+df.to_datetime()	  Harmonizes different date-time strings.
+inplace=True	      Modifies the existing DataFrame without requiring a new variable.
 
 Date Standardization: Using pd.to_datetime with format="mixed" to resolve varying date formats (e.g., 01-06-2023 and 10/06/23) into a single standard format.
